@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes Conexas Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="matriz-container">
+                <h2>Matriz</h2>
+                <button onclick="agregarNodo()">Agregar Nodo</button>
+                <button onclick="quitarNodo()">Quitar Nodo</button>
+                <button onclick="generarMatrizAleatoria()">Generar Matriz Aleatoria</button>
+                <table id="matriz"></table>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="grafo-container">
+                <h2>Grafo</h2>
+                <button onclick="dibujarGrafo()">Dibujar Grafo</button>
+                <div id="mynetwork"></div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="componentes-container">
+                <h2>Componentes Conexas</h2>
+                <button onclick="hallarComponentesFuertementeConexas()">Hallar Componentes Conexas</button>
+                <div id="resultado"></div>
+                <div id="sccVisualization"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
