@@ -1,0 +1,2 @@
+# scc
+Componentes conexas finder 
